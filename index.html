@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Kalam", cursive;
+      font-weight: bold;
+      background-color: rgb(157, 249, 154);
+    }
+    /* styling the forms  */
+    #form {
+      /* background-color: rgb(218, 169, 79); */
+      max-width: 500px;
+      margin: 5px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    /* styling form classes */
+    .details {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+    /* styling the labels of the classes */
+    .details label {
+      font-size: large;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .heading {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .heading h1 {
+      font-size: x-large;
+    }
+    /* styling input options */
+    .details input,
+    .details select,
+    .details textarea {
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      padding: 10px;
+      display: block;
+      width: 95%;
+      background-color: white;
+    }
+    /* styling radiobuttons and checkboxes */
+    .details input[type="radio"],
+    .details input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+    }
+    /* styling buttons */
+    .buttons {
+      background-color: #05c46b;
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      font-size: 21px;
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 2% 24%;
+      margin: 0% 20%;
+      background-color: rgb(153, 247, 106);
+    }
+    .btn:hover {
+      background-color: rgb(187, 242, 106);
+    }
+  </style>
+  <body>
+    <h1 class="heading">SURVEY-SHEET</h1>
+
+    <!-- for creating forms -->
+    <form id="form">
+      <!-- for filling the details in forms -->
+      <div class="details">
+        <label for="name" id="labelname">Name</label>
+        <!-- for inputting deatils into the forms -->
+        <input type="text" id="name" placeholder="Enter your Name " />
+      </div>
+      <div class="details">
+        <label for="email" id="labelemail">Email</label>
+        <input type="text" id="email" placeholder="Enter your Email " />
+      </div>
+      <div class="details">
+        <label for="age" id="labelage">Age</label>
+        <input type="text" id="age" placeholder="Enter your Age " />
+      </div>
+      <div class="details">
+        <label for="role" id="labelrole">Enter your Role</label>
+
+        <!-- dropdown menu setting -->
+        <select name="role" id="role">
+          <option value="#"></option>
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Developer</option>
+          <option value="teacher">Teacher</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="details">
+        <label> Languages and FrameWork Known </label>
+        <!-- checkbox -->
+        <label for="inp1"> <input type="checkbox" name="inp" />C </label>
+
+        <label for="inp2"> <input type="checkbox" name="inp" />C++ </label>
+
+        <label for="inp3"> <input type="checkbox" name="inp" />Java </label>
+
+        <label for="inp4">
+          <input type="checkbox" name="inp" />Javascript
+        </label>
+
+        <label for="inp5"> <input type="checkbox" name="inp" />Python</label>
+
+        <label for="inp6"> <input type="checkbox" name="inp" />Django </label>
+      </div>
+      <div class="details">
+        <label for="comments"> Any comments </label>
+        <!-- multiple line text input control -->
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="Enter your comments here"
+        >
+        </textarea>
+      </div>
+      <button class="btn" type="submit" values="submit">Submit</button>
+    </form>
+  </body>
+</html>
